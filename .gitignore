@@ -3,3 +3,7 @@ machine_learning/.ipynb_checkpoints
 deep_learning/.ipynb_checkpoints
 deep_learning/model_ckps
 deep_learning/tf_logs
+deep_learning/logs
+deep_learning/data
+deep_learning/*.ckpt.*
+
