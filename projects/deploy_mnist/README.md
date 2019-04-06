@@ -61,7 +61,7 @@ The REST API will return something like below JSON object
 
 ## Public API
 
-Your server is running on 0.0.0.0 and say your web console is on e.cloudxlab.com then you can use this REST API for your usages https://e.cloudxlab.com:4041/predict
+Your server is running on 0.0.0.0 and say your web console is on e.cloudxlab.com then you can use this REST API for your usages http://e.cloudxlab.com:4041/predict
 
 Replace 4041 with the port number on which your server is running.
 
