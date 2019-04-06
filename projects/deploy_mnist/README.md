@@ -49,11 +49,15 @@ flask run --host 0.0.0.0 --port 4041
 
 ## Predict the digit for the new image
 
-Login to another console and run below commands
+We will use the test images for predictions. Login to another console and run below commands.
 ```
 cd ml/projects/deploy_mnist/
 curl -F 'file=@test-images/7.png' 127.0.0.1:4041/predict
 ```
+
+The REST API will return something like below JSON object
+
+```{"digit":7}```
 
 ## Public API
 
