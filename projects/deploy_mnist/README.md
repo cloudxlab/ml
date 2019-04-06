@@ -3,45 +3,55 @@ The purpose of this project is to show how to move your machine learning models 
 # Steps
 
 ## Clone to repository
-
+```
 git clone https://github.com/cloudxlab/ml.git
+```
 
 ## Create virtual environment
 
+```
 cd ml/projects/deploy_mnist/
 virtualenv -p python3 venv
+```
 
 ## Activate virtual environment
 
+```
 source venv/bin/activate
+```
 
 ## Install the flask and other requirements
-
+```
 pip install -r requirements.txt
+```
 
 ## Train the model
 
 The trained model will be saved in trained_models directory
-
+```
 mkdir -p trained_models
 python train_mnist_model.py
+```
 
 ## Start the flask server for predictions
 
 The server runs on port 4041. If the port is already in use then use any of the port in the range of 4040 to 4060 as on CloudxLab only these ports are open for public access.
 
+```
 cd flask_app
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 export FLASK_APP=predictions.py
 flask run --host 0.0.0.0 --port 4041
+```
 
 ## Predict the digit for the new image
 
 Login to another console and run below commands
-
+```
 cd ml/projects/deploy_mnist/
 curl -F 'file=@test-images/7.png' 127.0.0.1:4041/predict
+```
 
 ## Public API
 
