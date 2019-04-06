@@ -1,0 +1,4 @@
+projects/deploy_mnist/venv/
+projects/deploy_mnist/__pycache__/
+projects/deploy_mnist/trained_models/*.pkl
+projects/deploy_mnist/flask_app/__pycache__/
