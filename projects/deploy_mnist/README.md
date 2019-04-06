@@ -9,6 +9,12 @@ We'll use Flask for exposing the model using the REST API for predictions. Flask
 git clone https://github.com/cloudxlab/ml.git
 ```
 
+## Set the Python path - On CloudxLab, the default installation is python2
+
+```
+export PATH=/usr/local/anaconda/bin/:$PATH
+```
+
 ## Create virtual environment
 
 ```
