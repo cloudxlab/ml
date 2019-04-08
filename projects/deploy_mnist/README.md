@@ -67,7 +67,9 @@ The REST API will return something like below JSON object
 
 ## Public API
 
-Your server is running on 0.0.0.0 and say your web console is on e.cloudxlab.com then you can use this REST API for your usages http://e.cloudxlab.com:4041/predict
+Your flask server is running on the CloudxLab web console. Let's say your web console is e.cloudxlab.com then the end Point URL will be http://e.cloudxlab.com:4041/predict
+
+You can call/use this REST API by using the above mentioned End Point URL.
 
 Replace 4041 with the port number on which your server is running.
 
