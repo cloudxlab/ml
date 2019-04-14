@@ -1,6 +1,6 @@
-The purpose of this project is to show how to move your machine learning models in production. In this project, we'll train the MNIST model, save the model to the file, load the model from the file in the flask app and predict the digit for the new images. Since input images in MNIST are 28x28 greyscale images, the images used for predictions have to be processed. They should be converted to greyscale and resized to 28x28 pixels. Because of this you may not get the accuracy in predictions but you will learn how to move your model to production (and which is the sole objective of this project).
+The purpose of this project is to show how to move your machine learning models in production. In this project, we'll train the MNIST model, save the model to the file, load the model from the file in the flask app and predict the digit for the new images. Since input images in MNIST are 28x28 greyscale images, the images used for predictions have to be processed. They should be converted to greyscale and resized to 28x28 pixels. Because of this, you may not get the accuracy in predictions but you will learn how to move your model to production (and which is the sole objective of this project).
 
-We'll use Flask for exposing the model using the REST API for predictions. Flask is a micro web framework written in Python. It's light weight and easy to learn.
+We'll use Flask for exposing the model using the REST API for predictions. Flask is a micro web framework written in Python. It's lightweight and easy to learn.
 
 # Steps
 
@@ -67,7 +67,9 @@ The REST API will return something like below JSON object
 
 ## Public API
 
-Your server is running on 0.0.0.0 and say your web console is on e.cloudxlab.com then you can use this REST API for your usages http://e.cloudxlab.com:4041/predict
+Your flask server is running on the CloudxLab web console. Let's say your web console is e.cloudxlab.com then the end Point URL will be http://e.cloudxlab.com:4041/predict
+
+You can call/use this REST API by using the above mentioned End Point URL.
 
 Replace 4041 with the port number on which your server is running.
 
