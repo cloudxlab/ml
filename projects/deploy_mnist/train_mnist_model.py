@@ -1,11 +1,14 @@
-from sklearn.datasets import fetch_mldata
+#from sklearn.datasets import fetch_mldata
+from sklearn.datasets import fetch_openml
 import numpy as np
 from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.externals import joblib
 
 np.random.seed(42)
-mnist = fetch_mldata("MNIST original")
+#mnist = fetch_mldata("MNIST original")
+mnist = fetch_openml('mnist_784', version=1, cache=True)
+mnist.target = mnist.target.astype(np.int8)
 X, y = mnist["data"], mnist["target"]
 
 X_train, X_test, y_train, y_test = X[:60000], X[60000:], y[:60000], y[60000:]
