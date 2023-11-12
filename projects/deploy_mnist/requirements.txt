@@ -1,5 +1,5 @@
 Flask==1.0.2
-numpy==1.16.2
+numpy==1.22.0
 #Pillow==2.2.1
 scikit-learn==0.20.3
 pillow==6.0.0
